@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "apercu_regular_pro";
+  src:  url("/apercu_bold_pro.otf") format("woff");
+  font-weight: bold;
+}
+:root {
+  --main-font: "apercu_regular_pro", sans-serif;
+  /* --main-color: #1a1a1e; */
+  --main-color: #cccccc;
+  --secondary-color: #816f19;
+}
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 12px;
+  letter-spacing: .5px;
+  line-height: 1.7;
+  font-style: italic;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: capitalize;
+}
+p {
+  color: var(--main-color) !important;
+}
+a {
+  text-decoration: none !important;
+  font-weight: bold;
+  color: var(--main-color);
+}
+a:hover, a:active {
+  outline: none;
+}
+.uk-button {
+  font-family: var(--main-font);
+  font-size: 12px;
+}
+
+/* General Custom Css  */
+.sequare-border {
+  border: 2px solid #999999;
+}
+.bottom-border {
+  border-bottom: 2px solid #999999;
+}
+.top-border {
+  border-top: 2px solid #999999;
+}
+.icon-circle {
+  border: 2px solid #999999;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+  vertical-align: middle;
+}
+.secondary-color {
+  color: #907900;
+}
+.uk-light {
+  color: #f5f5f5 !important;
+}
+/* ** Default nuxt Value **
+html, body {
+  background-color: #fff;
+  color: #2e2f30;
+  letter-spacing: 0.5px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+a, a:hover, a:focus, a:visited {
+  color: #744d82;
+}
+*/
+
+  .page-enter-active, .page-leave-active {
+    transition: opacity .5s
+  }
+
+  .page-enter, .page-leave-active {
+    opacity: 0
+  }
